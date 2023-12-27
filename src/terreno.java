@@ -24,5 +24,7 @@ public class terreno {
         System.out.printf("Preco do terreno = %.2f", preco);
 
         sc.close();
+
+        System.out.println("teste");
     }
 }
