@@ -2,29 +2,27 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class terreno {
-
     public static void main(String[] args) {
-
         Locale.setDefault(Locale.US);
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite a largura do terreno: ");
-        double l = sc.nextDouble();
+        System.out.print("digite a largura do terreno: ");
+        double largura = sc.nextDouble();
 
-        System.out.print("Digite o comprimento do terreno: ");
-        double c = sc.nextDouble();
+        System.out.print("digite o comprimento do terreno: ");
+        double comprimento = sc.nextDouble();
 
-        System.out.print("Digite o valor do metro quadrado: ");
-        double m = sc.nextDouble();
+        System.out.print("digite o valor do metro quadrado: ");
+        double mq = sc.nextDouble();
 
-        double area = l * c;
-        double preco = area * m;
+        double at = largura * comprimento;
+        double pt = mq * at;
 
-        System.out.printf("Area do terreno = %.2f\n", area);
-        System.out.printf("Preco do terreno = %.2f", preco);
+        System.out.printf("area do terreno: %.2f\n", at);
+        System.out.printf("Preco do terreno = %.2f", pt);
+
 
         sc.close();
-
-        System.out.println("teste");
     }
 }
